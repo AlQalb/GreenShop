@@ -12,6 +12,8 @@ export const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: ${({ border }) => (border ? border : 'none')};
+  cursor: pointer;
 
   :active {
     transform: translateY(1.5px);

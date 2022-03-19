@@ -3,8 +3,8 @@ import { ReactComponent as Search } from '../../../Assets/images/search.svg';
 import { ReactComponent as Heart } from '../../../Assets/images/heart.svg';
 import { ReactComponent as Shop } from '../../../Assets/images/shop.svg';
 export const Card = styled.div`
-  width: 250px;
-  height: 300px;
+  width: ${({ width }) => (width ? `${width}px` : '250px')};
+  height: ${({ height }) => (height ? `${height}px` : '300px')};
   background: #fbfbfb;
   margin: 34px 4px 19px 4px;
 
@@ -25,7 +25,7 @@ export const Card = styled.div`
 `;
 export const Image = styled.img`
   width: 100%;
-  height: 250px;
+  height: ${({ width }) => (width ? `${width}px` : '250px')};
 `;
 Card.Group = styled.div`
   display: flex;

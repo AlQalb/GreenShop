@@ -5,7 +5,7 @@ import data from '../../Mock/mock';
 function body() {
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       <Shoppage />
     </div>
   );

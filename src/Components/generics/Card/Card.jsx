@@ -4,9 +4,9 @@ import GreenTitle from '../greenTitle/GreenTitle';
 
 export default class CardFlower extends Component {
   render() {
-    const { value } = this.props;
+    const { value, height, width } = this.props;
     return (
-      <Card>
+      <Card height={height} width={width}>
         <Image src={value.src[0].src} />
         <Card.Group className='group'>
           <Shopicon />
